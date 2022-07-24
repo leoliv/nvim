@@ -47,20 +47,25 @@ set sidescroll=5
 set ttimeout
 set ttimeoutlen=1
 set hlsearch
+filetype plugin indent on
+filetype plugin on
+set ttyfast
 set ignorecase
 set conceallevel=0
 set linebreak
 set title
-set showcmd
+set showmatch
+set updatetime=1000
+" set showcmd
 set splitbelow splitright
 set foldcolumn=0
 set numberwidth=1
 set cmdheight=1
 set textwidth=80
-set colorcolumn=80
+" set colorcolumn=80
 set nobackup
 set noswapfile
-set shortmess+=c
+" set shortmess+=c
 set showmode
 " set backupdir=/temp//,.
 " set directory=/temp//,.
@@ -98,8 +103,6 @@ nmap <silent> <space>r <Plug>CodeRunner
 " let g:floaterm_height = 10
 " " Configuration example
 
-" TAB selection words
-inoremap <expr> <TAB> pumvisible() ? "<C-y>" : "<TAB>"
 
 " Vimspector
 nnoremap <Leader>dd :call vimspector#Launch()<CR>
@@ -280,3 +283,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "================================================================
+
+" TAB selection words
+inoremap <expr> <TAB> pumvisible() ? "<C-y>" : "<TAB>"
