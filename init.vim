@@ -20,7 +20,7 @@ Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'xianzhon/vim-code-runner'
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 "Plug 'editorconfig/editorconfig-vim'
 "Plug 'terryma/vim-multiple-cursors'
 "Plug 'github/copilot.vim'
@@ -51,18 +51,19 @@ filetype plugin indent on
 filetype plugin on
 set ttyfast
 set ignorecase
-set conceallevel=0
+set conceallevel=2
 set linebreak
 set title
 set showmatch
 set updatetime=1000
 " set showcmd
 set splitbelow splitright
+set signcolumn=yes:1
 set foldcolumn=0
 set numberwidth=1
 set cmdheight=1
 set textwidth=80
-" set colorcolumn=80
+set colorcolumn=80
 set nobackup
 set noswapfile
 " set shortmess+=c
