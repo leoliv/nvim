@@ -14,6 +14,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plug 'neoclide/jsonc.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'joshdick/onedark.vim'
 " Plug 'Yggdroot/indentLine'
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'mattn/emmet-vim'
@@ -122,15 +123,37 @@ nmap <Leader>dj <Plug>VimspectorStepOver
 "================================================================
 "######################### COLORS ###############################
 " Color
-colorscheme dracula
-hi Normal guibg=NONE
+" colorscheme dracula
+" hi Normal guibg=NONE
 " hi CursorLineNr guibg=NONE guifg=#eeeeee
-hi CursorLineNr guibg=NONE guifg=NONE ctermfg=NONE cterm=NONE
-hi CursorLine guibg=#111111
-hi LineNr guifg=#838383 guibg=NONE
-hi SignColumn guibg=NONE
-hi Label guifg=#e285ff
-hi Identifier guifg=#A2CBFF
+" hi CursorLineNr guibg=NONE guifg=NONE ctermfg=NONE cterm=NONE
+" hi CursorLine guibg=#111111
+" hi LineNr guifg=#838383 guibg=NONE
+" hi SignColumn guibg=NONE
+" hi Label guifg=#e285ff
+" hi Identifier guifg=#A2CBFF
+
+
+if (has("autocmd") && !has("gui_running"))
+  augroup colorset
+    autocmd!
+    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+  augroup END
+endif
+
+hi Comment cterm=italic
+let g:ondedark_hide_endofbuffer=1
+let g:ondedark_terminal_italics=1
+let g:ondedark_termcolors=256
+
+syntax on
+colorscheme onedark
+
+if (has("termguicolors"))
+  set termguicolors
+  hi LineNr guifg=NONE guibg=NONE
+endif
 
 "================================================================
 "####################### CONFIGURATIONS #########################
