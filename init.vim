@@ -2,24 +2,24 @@
 "########################### PLUGINS ############################
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'altercation/vim-colors-solarized'
-Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-commentary'
-Plug 'skammer/vim-css-color'
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"Plug 'altercation/vim-colors-solarized'
+"Plug 'tpope/vim-surround'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'tpope/vim-commentary'
+"Plug 'skammer/vim-css-color'
 " Plug 'sheerun/vim-polyglot'
 " Plug 'dense-analysis/ale'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
-Plug 'neoclide/jsonc.vim'
+"Plug 'terryma/vim-multiple-cursors'
+"Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+"Plug 'neoclide/jsonc.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'joshdick/onedark.vim'
 " Plug 'Yggdroot/indentLine'
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'KabbAmine/vCoolor.vim'
+"Plug 'KabbAmine/vCoolor.vim'
 Plug 'xianzhon/vim-code-runner'
 " Plug 'puremourning/vimspector'
 "Plug 'editorconfig/editorconfig-vim'
