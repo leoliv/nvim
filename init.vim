@@ -78,6 +78,7 @@ set showmode
 "================================================================
 "########################### MAPS ###############################
 
+let g:coc_global_extensions = ['coc-json', 'coc-git']
 
 " Format
 nnoremap <Space>f :Format <CR>
