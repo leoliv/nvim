@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 "Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 "Plug 'altercation/vim-colors-solarized'
-"Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-commentary'
 "Plug 'skammer/vim-css-color'
